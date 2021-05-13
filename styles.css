@@ -1,0 +1,93 @@
+:root {
+  --primary-color: rgba(75, 75, 75, 1);
+}
+
+a {
+  display: block;
+  margin: 10px;
+}
+
+body {
+  padding-top: 100px;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+img {
+  padding: 0;
+}
+
+p {
+  color: var(--primary-color);
+  line-height: 28px;
+}
+
+.overlay {
+  background-color: black;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.4s ease-in;
+  width: 100%;
+}
+
+.overlay a {
+  margin-top: 40%;
+}
+
+.portfolio-thumbnail {
+  position: relative;
+}
+
+.portfolio-thumbnail:hover .overlay {
+  opacity: 0.9;
+}
+
+.portfolio-thumbnail:hover .project-button {
+  opacity: 0;
+  transition: 0.4s ease-out;
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-button {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-button {
+    display: none;
+  }
+}
