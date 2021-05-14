@@ -1,0 +1,102 @@
+:root {
+  --primary-color: rgba(75, 75, 75, 1);
+  --secondary-color: rgb(128, 128, 128);
+}
+
+.primary {
+  color: var(--primary-color);
+
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 70px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+i   {  
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+
+
+
+img {
+  max-width: 100%;
+}
+
+p   {
+    color: var(--primary-color);
+}
+
+small   {
+    color: var(--secondary-color);
+}
+
+
+.header {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay h1 {
+  margin-top: 18%;
+}
+
+.website-button{
+    background-color: var(--primary-color);
+    /* border: 1px solid var(--primary-color); */
+    color: rgba(245, 245, 245, 0.911);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  @media (max-width: 650px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  @media (max-width: 550px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  @media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+}
