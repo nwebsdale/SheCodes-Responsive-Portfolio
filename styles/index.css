@@ -24,7 +24,6 @@ h1 {
   font-weight: 600;
   letter-spacing: 2px;
   margin: 0;
-  white-space: nowrap;
 }
 
 h2 {
@@ -50,7 +49,7 @@ img {
 
 p {
   color: var(--primary-color);
-  line-height: 28px;
+  font-size: 16px;
 }
 
 .about-button {
@@ -95,15 +94,6 @@ p {
   background-color: var(--primary-color);
 }
 
-@media (max-width: 400px) {
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-}
-
 @media (max-width: 1153px) {
   h1 {
     font-size: 30px;
@@ -117,10 +107,31 @@ p {
   .hide-button {
     display: none;
   }
-}
-
-@media (min-width: 992px) {
   .project-button {
     display: none;
+  }
+}
+
+@media (max-width: 435px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
   }
 }
