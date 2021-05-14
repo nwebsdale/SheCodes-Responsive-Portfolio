@@ -2,12 +2,18 @@
   --primary-color: rgba(75, 75, 75, 1);
 }
 
+.primary {
+  color: var(--primary-color);
+}
+
 a {
+  color: whitesmoke;
   display: block;
-  margin: 10px;
+  margin: 0px;
 }
 
 body {
+  padding-bottom: 20px;
   padding-top: 100px;
 }
 
@@ -28,6 +34,14 @@ h2 {
   white-space: nowrap;
 }
 
+i {
+  font-size: 60px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
 img {
   padding: 0;
 }
@@ -37,38 +51,43 @@ p {
   line-height: 28px;
 }
 
+.about-button {
+  background-color: var(--primary-color);
+}
+
+.btn {
+  color: whitesmoke !important;
+}
+
 .overlay {
-  background-color: black;
   bottom: 0;
   height: 100%;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
   opacity: 0;
+  position: absolute;
   transition: 0.4s ease-in;
   width: 100%;
-}
-
-.overlay a {
-  margin-top: 40%;
 }
 
 .portfolio-thumbnail {
   position: relative;
 }
 
+.portfolio-thumbnail a {
+  background-color: black;
+  border: 3px solid whitesmoke;
+  letter-spacing: 0.5px;
+  padding-top: 48%;
+}
+
 .portfolio-thumbnail:hover .overlay {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
-.portfolio-thumbnail:hover .project-button {
-  opacity: 0;
-  transition: 0.4s ease-out;
-}
-
-.primary {
-  color: var(--primary-color);
+.project-button {
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 400px) {
@@ -77,6 +96,15 @@ p {
   }
   h2 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1153px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
   }
 }
 
