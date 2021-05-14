@@ -1,5 +1,6 @@
 :root {
   --primary-color: rgba(75, 75, 75, 1);
+  --secondary-color: rgb(128, 128, 128);
 }
 
 .primary {
@@ -35,6 +36,7 @@ h2 {
 }
 
 i {
+  color: var(--secondary-color);
   font-size: 60px;
 }
 
@@ -53,6 +55,9 @@ p {
 
 .about-button {
   background-color: var(--primary-color);
+  color: rgba(245, 245, 245, 0.911);
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .btn {
@@ -109,7 +114,7 @@ p {
 }
 
 @media (max-width: 992px) {
-  .about-button {
+  .hide-button {
     display: none;
   }
 }
