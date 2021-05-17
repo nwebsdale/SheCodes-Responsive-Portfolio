@@ -86,7 +86,7 @@
               >
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="about.html#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -199,27 +199,52 @@
           <img class="about-imgs" src="./images/grid-4.jpg" alt="" />
         </div>
       </div>
+
       <div class="contact">
-        <h2 class="mt-4">Contact:</h2>
+        <div class="row">
+          <div class="col-7">
+            <h2 class="mt-4">Contact:</h2>
 
-        <p class="m-0"><strong>Name: </strong>Natasha Websdale</p>
-        <p class="m-0"><strong>Email: </strong>natashawebsdale@hotmail.co.uk</p>
-        <p class="m-0"><strong>Telephone: </strong>07000 000000</p>
-
-        <div class="row mt-2">
-          <div class="col-2">
-            <p><strong>Address:</strong></p>
-          </div>
-          <div class="col-10">
-            <p>
-              Buckingham Palace <br />
-              London<br />
-              SW1A 1AA<br />
-              United Kingdom
+            <p class="m-0"><strong>Name: </strong>Natasha Websdale</p>
+            <p class="m-0">
+              <strong>Email: </strong>natashawebsdale@hotmail.co.uk
             </p>
+            <p class="m-0"><strong>Telephone: </strong>07000 000000</p>
+
+            <div class="row mt-2">
+              <div class="col-2">
+                <p><strong>Address:</strong></p>
+              </div>
+              <div class="col-10">
+                <p>
+                  Buckingham Palace <br />
+                  London<br />
+                  SW1A 1AA<br />
+                  United Kingdom
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 mt-5">
+            <div class="map" id="map"></div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      function initMap() {
+        var location = { lat: -25.363, lng: 131.044 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: location,
+        });
+      }
+    </script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB04YgwfcLIqjzEwaoUYCnMxUEz3WKpw-A&callback=initMap"
+    ></script>
   </body>
 </html>
