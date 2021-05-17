@@ -201,41 +201,42 @@
       </div>
 
       <div class="contact">
-        <div class="row">
-          <div class="col-7">
-            <h2 class="mt-4">Contact:</h2>
-
-            <p class="m-0"><strong>Name: </strong>Natasha Websdale</p>
-            <p class="m-0">
-              <strong>Email: </strong>natashawebsdale@hotmail.co.uk
-            </p>
-            <p class="m-0"><strong>Telephone: </strong>07000 000000</p>
-
-            <div class="row mt-2">
-              <div class="col-2">
-                <p><strong>Address:</strong></p>
-              </div>
-              <div class="col-10">
-                <p>
-                  Buckingham Palace <br />
-                  London<br />
-                  SW1A 1AA<br />
-                  United Kingdom
-                </p>
-              </div>
-            </div>
+          <div class="row">
+              <h2 class="mt-4">Contact:</h2>
           </div>
-          <div class="col-5 mt-5">
-            <div class="map" id="map"></div>
+          <div class="row">
+              <div class="col-sm-7">
+                  <p class="mb-0"><strong>Name:</strong> Natasha Websdale</p>
+                  <p class="mb-0"><strong>Email:</strong> natashawebsdale@hotmail.co.uk</p>
+                  <p class="mb-0"><strong>Telephone:</strong> 07000 000000</p>
+                  <br />
+                  <p class="mb-0"><strong>Address:</strong></p>
+                  <p>Buckingham Palace <br />
+                        London<br />
+                SW1A 1AA<br />
+                United Kingdom</p>
+              </div>
+              <div class="col-sm-5">
+                  <div class="map" id="map"></div>
+                  <!-- <p class="mb-0"><strong>Address:</strong></p>
+                  <p>Buckingham Palace <br />
+                        London<br />
+                SW1A 1AA<br />
+                United Kingdom</p> -->
+              </div>
           </div>
-        </div>
+      </div>
+      
+
+      
+        
       </div>
     </div>
     <script>
       function initMap() {
-        var location = { lat: -25.363, lng: 131.044 };
+        var location = { lat: 51.501, lng: -0.141 };
         var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
+          zoom: 15,
           center: location,
         });
       }
